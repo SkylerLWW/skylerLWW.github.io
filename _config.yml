@@ -1,6 +1,6 @@
 # Site settings
-title: SkylerLWW Blog
-SEOTitle: LWW的博客 | SkylerLWW Blog
+title: SkylerLWW
+SEOTitle: SkylerLWW
 header-img: img/home-bg.jpg
 email: 暂无
 description: "描述"
@@ -13,7 +13,7 @@ baseurl: "/main"         # for example, '/blog' if your blog hosted on 'host/blo
 RSS: false
 weibo_username:     #
 zhihu_username:     #
-github_username:    SkylerLWW
+github_username: SkylerLWW
 #twitter_username:  SkylerLWW
 facebook_username:  #
 
@@ -24,14 +24,14 @@ facebook_username:  #
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: [ "less","node_modules","Gruntfile.js","package.json","README.md" ] #排除的文件或目录：（.less文件）、构建工具的依赖项（node_modules）、构建脚本（Gruntfile.js）、NPM包描述文件（package.json）和README文档
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+gems: [ jekyll-paginate ]
 
 
 
@@ -45,23 +45,23 @@ kramdown:
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
+  # Disqus settings
+  #disqus_username: _your_disqus_short_name_
 
-# Duoshuo settings
-duoshuo_username: huxblog
+  # Duoshuo settings
+duoshuo_username: duoshuo_username
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: false                    # set to false if you want to use Comment without Sharing
 
 
 
 
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+## Analytics settings
+## Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+## Google Analytics
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
 
 
 
@@ -72,19 +72,19 @@ sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址
 
 
 
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
+# Featured Tags 特色标签
+featured-tags: false                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 
 # Friends
 friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    }
+  {
+    title: "Hux Blog",
+    href: "http://huangxuan.me"
+  },{
+    title: "add",
+    href: "#"
+  }
 ]
