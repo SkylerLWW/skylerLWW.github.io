@@ -1,6 +1,6 @@
 # Site settings
 title: SkylerLWW Blog
-SEOTitle: 你的博客 | Your Blog
+SEOTitle: LWW的博客 | SkylerLWW Blog
 header-img: img/home-bg.jpg
 email: 暂无
 description: "描述"
@@ -11,11 +11,11 @@ baseurl: "/main"         # for example, '/blog' if your blog hosted on 'host/blo
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+weibo_username:     SkylerLWW
+zhihu_username:     SkylerLWW
+github_username:    SkylerLWW
+#twitter_username:  SkylerLWW
+facebook_username:  SkylerLWW
 
 
 
