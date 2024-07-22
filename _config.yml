@@ -5,9 +5,10 @@ header-img: img/home-bg.jpg
 email: 暂无
 description: "描述"
 keyword: "关键词1 "
-url: "https://skylerLWW.github.io"              # your host, for absolute URL
-baseurl: "/skylerLWW.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
-
+#url: "https://skylerLWW.github.io"              # your host, for absolute URL
+#baseurl: "/skylerLWW.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://huangxuan.me" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
