@@ -11,11 +11,11 @@ baseurl: "/main"         # for example, '/blog' if your blog hosted on 'host/blo
 
 # SNS settings
 RSS: false
-weibo_username:     SkylerLWW
-zhihu_username:     SkylerLWW
+weibo_username:     #
+zhihu_username:     #
 github_username:    SkylerLWW
 #twitter_username:  SkylerLWW
-facebook_username:  SkylerLWW
+facebook_username:  #
 
 
 
@@ -85,15 +85,6 @@ friends: [
         href: "http://huangxuan.me"
     },{
         title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
         href: "#"
     }
 ]
