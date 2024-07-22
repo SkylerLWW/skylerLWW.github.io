@@ -3,8 +3,8 @@ title: SkylerLWW
 SEOTitle: SkylerLWW
 header-img: img/home-bg.jpg
 email: 暂无
-description: "描述"
-keyword: "关键词1 "
+description: ""
+keyword: ""
 url: "https://skylerLWW.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -59,8 +59,8 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-disqus_username: hux
+## Disqus settings
+#disqus_username: skylerLWW
 
 # Netease settings
 netease_comment: false
@@ -75,7 +75,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true  #添加侧边栏
-sidebar-about-description: "简单的描述一下你自己"
+sidebar-about-description: "我爱睡觉"
 sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
 
 
