@@ -1,0 +1,9 @@
+#menu.menu-color {
+    background: #0003;
+}
+#menu.menu-color #desktop-menu a,
+#menu.menu-color #mobile-menu a,
+#menu.menu-color #mobile-menu .title {
+    color: #fff;
+}
+

@@ -1,0 +1,27 @@
+# 主题的语言设置
+language:
+  default: "zh" # 设置默认语言为中文
+  # 或者使用以下方式指定多个语言
+  # available: ["zh", "en"] # 支持中文和英文
+
+menu:
+    Home:
+        name: house
+        theme: solid
+        link: /
+    About:
+        name: id-card
+        theme: solid
+        link: /about
+    Archives:
+        name: box-archive
+        theme: solid
+        link: /archives
+    Categories:
+        name: bookmark
+        theme: solid
+        link: /categories
+    Tags:
+        name: tags
+        theme: solid
+        link: /tags

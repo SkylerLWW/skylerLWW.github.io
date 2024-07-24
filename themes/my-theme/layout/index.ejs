@@ -1,0 +1,17 @@
+<!-- 显示文章信息 -->
+<ul>
+<% page.posts.each(post=>{ %>
+    <li>
+        <a href="<%=url_for(post.path)%>">
+            <%= post.title %>
+        </a>
+        | <%- date( post.date , 'YYYY/MM/DD HH:mm') %>
+    </li>
+<% }) %>
+</ul>
+
+<!-- 分页 -->
+<%- paginator({
+    prev_text: '<',
+    next_text: '>'
+}) %>
