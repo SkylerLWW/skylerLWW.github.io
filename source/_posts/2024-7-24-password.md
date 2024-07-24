@@ -4,6 +4,11 @@ date: 2023-04-01 12:00:00
 abstract: Welcome to my blog, enter password to read.
 password: 123
 message: 请输入密码：123
+tags:
+  - test1
+  - test2
+categories:
+  - test3 
 ---
 
 <nav>
