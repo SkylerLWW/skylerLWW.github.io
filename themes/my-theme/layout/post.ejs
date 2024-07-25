@@ -1,21 +1,31 @@
 <!-- 博客详情 -->
-<h2><%- page.title %></h2>
-<p><%- date(page.date , 'YYYY/MM/DD HH:mm:ss') %> </p>
-<%- page.content  %>
+<div>
+    <span id="post-author">作者: <%- config.author %></span>
+    <span id="post-date"><%- date(page.date, "YYYY-MM-DD HH:mm:ss" ) %></span>
+</div>
 
-<% if (page.prev) { %>
-    <h5>
-        <a href="<%- url_for(page.prev.path) %>">
-            < 上一篇：<%- page.prev.title  %>
-        </a>
-    </h5>
-<% } %>
+<div id="article">
+    <%- page.content %>
+</div>
+<div id="page-prev-next">
+    <div id="page-prev">
+        <% if (page.prev) { %>
+            <h5>
+                <a href="<%- url_for(page.prev.path) %>">
+                    上一篇：<%- page.prev.title %>
+                </a>
+            </h5>
+            <% } %>
+    </div>
 
-<% if (page.next) { %>
-    <h5>
-        <a href="<%- url_for(page.next.path) %>">
-            下一篇：<%- page.next.title  %> >
-        </a>
-    </h5>
-<% } %>
+    <div id="page-next">
 
+        <% if (page.next) { %>
+            <h5>
+                <a href="<%- url_for(page.next.path) %>">
+                    下一篇：<%- page.next.title %>
+                </a>
+            </h5>
+            <% } %>
+    </div>
+</div>

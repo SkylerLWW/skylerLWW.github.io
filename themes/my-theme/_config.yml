@@ -1,27 +1,35 @@
+# 标题
+title: MakeByMine
+
+# 作者
+author: "空白"
+
 # 主题的语言设置
 language:
   default: "zh" # 设置默认语言为中文
   # 或者使用以下方式指定多个语言
   # available: ["zh", "en"] # 支持中文和英文
 
-menu:
+menus:
+    main:
+        name: skylerLWW
+        link: /
     Home:
         name: house
-        theme: solid
         link: /
     About:
-        name: id-card
-        theme: solid
+        name: about
         link: /about
     Archives:
-        name: box-archive
-        theme: solid
+        name: Archives
         link: /archives
     Categories:
-        name: bookmark
-        theme: solid
-        link: /categories
+        name: categories
+        link: /category
     Tags:
         name: tags
-        theme: solid
-        link: /tags
+        link: /tag
+
+links:
+  gitee: https://www.gitee.com/SmartLWW
+  github: https://www.github.com/SkylerLWW

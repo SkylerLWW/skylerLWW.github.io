@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>网站标题</title>
+    <meta charset="utf-8">
+    <title><%- config.title %></title>
+    <!-- 引入配置文件 -->
+    <%- css('css/main.css') %>
+    <%- js('js/JQuery.js') %>
+    <%- js('js/main.js') %>
 </head>
 
 <body>
-    <h1>
-        <a href="/"><%= config.title  %></a> |
-        <a href="/">Home</a> |
-        <a href="<%-url_for(config.archive_dir)%>">Archive</a> |
-        <a href="/about/">About</a>
-    </h1>
+    <div id="main">
+        <!-- 引入侧边栏 -->
+        <aside>
+            <%- include('aside.ejs') %>
+        </aside>
 
-<%- body %>
-
-<h3>categories</h3>
-    <ul>
-        <% site.categories.each(category=>{ %>
-            <li>
-                <a href="<%- url_for(category.path) %>">
-                    <%- category.name  %>
-                </a>
-            </li>
-        <% }) %>
-    </ul>
+        <!-- 引入导航 -->
+        <nav>
+            <%- include('nav.ejs') %>
+        </nav>
 
 
-<h3>tags</h3>
-    <ul>
-        <% site.tags.each(tag=>{ %>
-            <li>
-                <a href="<%- url_for(tag.path) %>">
-                    <%- tag.name  %>
-                </a>
-            </li>
-        <% }) %>
-    </ul>
+        <!-- 引用index.ejs -->
+        <div id="content">
+            <div id="index">
+                <%- body %>
+            </div>
 
+<!--             <div id="categories"> -->
+<!--                 <h3>categories</h3> -->
+<!--                 <ul> -->
+<!--                     <% site.categories.each(category=>{ %> -->
+<!--                         <li> -->
+<!--                             <a href="<%- url_for(category.path) %>"> -->
+<!--                                 <%- category.name %> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <% }) %> -->
+<!--                 </ul> -->
+<!--             </div> -->
 
+<!--             <div id="tags"> -->
+<!--                 <h3>tags</h3> -->
+<!--                 <ul> -->
+<!--                     <% site.tags.each(tag=>{ %> -->
+<!--                         <li> -->
+<!--                             <a href="<%- url_for(tag.path) %>"> -->
+<!--                                 <%- tag.name %> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <% }) %> -->
+<!--                 </ul> -->
+<!--             </div> -->
+        </div>
+    </div>
 </body>
-
 </html>
