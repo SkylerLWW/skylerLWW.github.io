@@ -14,25 +14,26 @@
 </head>
 
 <body>
+    <!-- 回到顶部按钮 -->
+    <button id="backTop" onclick="backTop()">Top</button>
+    <!-- 引入侧边栏 -->
+    <div id="aside">
+        <%- include('aside.ejs') %>
+    </div>
 
-        <!-- 引入侧边栏 -->
-        <div id="aside">
-            <%- include('aside.ejs') %>
-        </div>
+    <!-- 引入导航栏 -->
+    <div id="nav">
+        <%- include('nav.ejs') %>
+    </div>
 
-        <!-- 引入导航栏 -->
-        <div id="nav">
-            <%- include('nav.ejs') %>
-        </div>
+    <!-- 引用index.ejs -->
+    <div id="content">
+        <%- body %>
+    </div>
 
-        <!-- 引用index.ejs -->
-        <div id="content">
-            <%- body %>
-        </div>
-
-        <!-- 引入页脚 -->
-        <div id="footer">
-            <%- include('footer.ejs') %>
-        </div>
+    <!-- 引入页脚 -->
+    <div id="footer">
+        <%- include('footer.ejs') %>
+    </div>
 </body>
 </html>

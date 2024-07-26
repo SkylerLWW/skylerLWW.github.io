@@ -23,12 +23,6 @@ menus:
     Archives:
         name: Archives
         link: /archives
-    Categories:
-        name: categories
-        link: /category
-    Tags:
-        name: tags
-        link: /tag
 
 backlinks:
   gitee:

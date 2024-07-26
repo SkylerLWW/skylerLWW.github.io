@@ -1,4 +1,4 @@
-/* #################### 全局 #################### */
+/* #################### start 全局 #################### */
 * {
 	margin: 0;
 	padding: 0;
@@ -40,10 +40,29 @@ body {
     width: 100%;
     background: rgba(234, 234, 239);
 }
-/* #################### 全局 #################### */
+
+#backTop {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    margin-right: 20px;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    background-color: deepskyblue;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 50%;
+    transition: all linear 0.5s;
+    cursor: pointer;
+    opacity: 1;
+}
+/* #################### end 全局 #################### */
 
 
-/* #################### 导航栏 #################### */
+/* #################### start 导航栏 #################### */
 #nav #menu {
     float: left;
     padding-right: 20px;
@@ -84,10 +103,10 @@ body {
     text-align: center;
     line-height: 2.5;
 }
-/* #################### 导航栏 #################### */
+/* #################### end 导航栏 #################### */
 
 
-/* #################### 文章 #################### */
+/* #################### start 文章 #################### */
 /* 作者 时间 相关 */
 #post-author {
     font-size: 9px;
@@ -228,77 +247,119 @@ body {
   border-bottom-right-radius: 3px;
 }
 
-/* #################### 文章 #################### */
+/* #################### end 文章 #################### */
 
 
-/* #################### 主页 #################### */
-
-#articleList {
-    position: absolute;
+/* #################### start 主页 #################### */
+#home-posts .page-current .page-num:hover {
+    background: #66afef;
+    color: #fff;
 }
-
-#articleList .article-li {
-    margin: 20px;
-    height: 200px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px #999;
-    list-style: none;
-    border: 1px solid #999;
+#home-posts {
+    margin: auto;
 }
-
-#articleList .article-digest * {
-    word-wrap: break-word;
-    display: inline;
-    font-size: 12px;
-    color: #555;
-    text-decoration: none;
-    cursor:auto;
-    border-radius: none;
-    box-shadow: none;
-}
-
-#articleList .article-digest{
-    padding: 30px;
-    position: relative;
-    top: 35px;
-    width: 85%;
-}
-
-#articleList .article-date{
-    position: relative;
-    background: #e06c75;
-    color: #f9f7ed;
-    padding: 10px;
-    top: -5px;
-    border-radius: 2px;
-    margin-left: 30px;
-}
-
-#articleList .article-read {
-    position: absolute;
-    background: #e06c75;
-    color: #f9f7ed;
-    padding: 10px;
-    border-radius: 2px;
-    right: 15px;
-    margin-top: 140px;
-    text-decoration: none;
-    z-index: 1;
-}
-
-#articleList .article-title {
-    position: relative;
-    color: #555;
-    text-decoration: none;
-    font-size: 24px;
+#home-posts .page-current {
+    align-items: center;
+    display: flex;
     font-weight: bold;
-    top: 50px;
-    right: 110px;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+#home-posts .page-current .current {
+    border-radius: 5px;
+    color: #da0a51;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 7px;
+    padding: 5px;
+    width: 35px;
+}
+#home-posts .page-current .page-num,
+#home-posts .page-current .page-omit {
+    border-radius: 5px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 7px;
+    padding: 5px;
+    width: 35px;
+}
+#home-posts .page-current a {
+    color: #999;
+}
+#home-posts .post {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #d9d9d980;
+}
+#home-posts .post .category-and-date {
+    color: #5c6b72;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+#home-posts .post .category-and-date .category {
+    display: inline-block;
+    margin-right: 25px;
+}
+#home-posts .post .category-and-date .category a
+{
+    color: #5c6b72;
+}
+#home-posts .post .category-and-date .date
+{
+    display: inline-block;
+}
+#home-posts .post .go-post {
+    background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%);
+    border: 0;
+    border-radius: 20px 0;
+    bottom: 5px;
+    box-shadow: 2px 2px 10px 0 #ffbbf47a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 24px;
+    margin: 10px 0px 0px 0px
+    position: absolute;
+    right: -5px;
+}
+#home-posts .post .post-tags .tag {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#home-posts .post .post-tags a {
+    font-size: 14px;
+}
+#home-posts .post .post-tags,
+#archives .info,
+.article .info {
+    line-height: 1.7;
+}
+#home-posts .post-title {
+    color: #66afef;
+    text-align: center;
+}
+#home-posts .post:hover {
+    box-shadow: 0 0 5px #d9d9d9;
+    transform: translate(-5px, -5px);
+}
+#home-posts-wrap {
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
 }
 
-/* #################### 主页 #################### */
+/* #################### end 主页 #################### */
 
-/* #################### 页尾 #################### */
+/* #################### start 页尾 #################### */
 #footer #backlinks {
     display: flex;
     justify-content: center;
@@ -315,4 +376,9 @@ body {
     margin: 0 10px;
 }
 }
-/* #################### 页尾 #################### */
+/* #################### end 页尾 #################### */
+
+/* #################### start 侧边栏 #################### */
+
+
+/* #################### end 侧边栏 #################### */

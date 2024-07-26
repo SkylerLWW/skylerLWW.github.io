@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<script>
+function stopAudio()
+ {
+        document.getElementById('audio').pause();
+        audio.currentTime = 0; // 将播放位置重置到开头
+}
+
+/*function myFunction()
+{
+    document.getElementById("audioElement").play();
+    //document.getElementById("audio").muted = false;
+    document.write("Playing audio");
+}*/
+
+</script>
+
+<!--<button id="playAudio" onclick="myFunction()">Play Audio</button>-->
+<button id="stopAudio" onclick="stopAudio()">Stop Music</button>
+
+<audio id="audio" autoplay="autoplay" controls loop="loop" preload="auto">
+    <source src="1.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

@@ -9,3 +9,9 @@ function playAudio()
     document.getElementById("audio").play();
     document.getElementById("audio").muted = false;
 }
+
+function backTop()
+{
+    event.preventDefault();
+    window.scrollTo(0, 0 ,'smooth');
+}
