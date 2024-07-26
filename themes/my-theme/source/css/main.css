@@ -55,7 +55,7 @@ body {
 }
 
 /* 搜索框 */
-#nav input {
+#nav #search-input {
     width: 100px;
     height: 30px;
     margin: 10px 0px 10px 500px ;
@@ -67,10 +67,10 @@ body {
     position: absolute;
 }
 /* 搜索图标 */
-#nav #search i.fa.fa-search {
+#nav #iconfont icon-chazhao {
     position: absolute;
     color: #757575;
-    margin: 10px 0px 10px 620px ;
+    margin: 0px 0px 10px 620px ;
     font-size: 20px;
     width: 40px;
     height: 30px;

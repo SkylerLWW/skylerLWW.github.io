@@ -2,7 +2,8 @@
     <% for ( backlinks in theme.backlinks ) { %>
         <li class="backlinks-item">
             <a href="<%- theme.backlinks[backlinks]['url'] %>" target="_blank">
-                <i class="<%- theme.backlinks[backlinks]['icon'] %>"></i></a>
+                <i class="iconfont <%- theme.backlinks[backlinks]['icon'] %>"></i></a>
+        </a>
         </li>
         <% } %>
 </div>

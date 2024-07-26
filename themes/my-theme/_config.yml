@@ -33,10 +33,16 @@ menus:
 backlinks:
   gitee:
     url: https://www.gitee.com/SmartLWW
-    icon: fa fa-google
+    icon: icon-gitee
   github:
     url: https://www.github.com/SkylerLWW
-    icon: fa fa-github
+    icon: icon-github1
+  bilibili:
+    url: https://space.bilibili.com/403796789
+    icon: icon-person
+  douyin:
+    url: https://space.bilibili.com
+    icon: icon-douyinzhanghao
 
 favicon:
   href: /images/head.png # 网站图标
