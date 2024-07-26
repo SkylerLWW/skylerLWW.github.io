@@ -379,6 +379,32 @@ body {
 /* #################### end 页尾 #################### */
 
 /* #################### start 侧边栏 #################### */
+#aside #categories,
+#aside #tags{
+    border-style:solid;
+	border-width:1px;
+	border-color: #e06c75;
+	text-align: center;
+	margin: 20px 0px 20px 10px;
+}
+#aside #categories h3,
+#aside #tags h3{
+    color: #e06c75;
+}
 
+#aside #categories ul,
+#aside #tags ul{
+    margin-left: 20px;
+    list-style: none;
+}
+
+#aside #categories ul li,
+#aside #tags ul li{
+    border: 1px solid gray
+}
+#aside #categories ul li a,
+#aside #tags ul li a{
+    color:rgba(83, 139, 205 )
+}
 
 /* #################### end 侧边栏 #################### */
