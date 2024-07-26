@@ -1,16 +1,28 @@
 ---
-title: testAndPassword
-date: 2023-04-01 12:00:00
-abstract: Welcome to my blog, enter password to read.
+title: 测试文章（显示图片，下载文件，密码输入）
+date: 2024-04-01 12:00:00
+abstract: 有密码文章的描述的文字
 password: 123
 message: 请输入密码：123
 tags:
-  - test1
-  - test2
+  - tag1
+  - 标签
 categories:
-  - test3 
+  - categories1
+  - 分类
 ---
 
+图片显示
+![tu](1.png)
+
+<br/>
+
+下载测试
+<a href="1.txt" download="1.txt">下载</a>
+
+<br/>
+
+不知道为什么无法输出
 <nav>
   <ul>
     {% for item in site.data.menu %}

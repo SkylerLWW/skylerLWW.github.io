@@ -2,14 +2,17 @@
 <div id="articleList">
     <ul>
         <% site.posts.forEach(function(post){ %>
-
             <li class="article-li">
-                <span class="article-date"><%- date(post.date, "YYYY-MM-DD") %></span>
-                <a class="article-read" href="<%- config.root %><%- post.path %>"> 阅读全文 </span>
-                <a class="article-title" href="<%- config.root %><%- post.path %>"><%- post.slug.split("/")[post.slug.split("/").length-1] %></a>
+                <span class="article-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+                <a class="article-read" href="<%= config.root %><%= post.path %>"> 阅读全文 </span>
+                <a class="article-title" href="<%= config.root %><%= post.path %>"><%= post.title %></a>
                 <div class="article-digest">
-                    <%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
-                    ...
+                    <% if (post.description && post.description.trim()) { %>
+                        <%= post.description %>
+                    <% } else { %>
+                        <%= post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
+                        ...
+                    <% } %>
                 </div>
             </li>
 
@@ -19,5 +22,5 @@
 <!-- 分页 -->
 <!-- 莫名其妙的在最上面 -->
 <!-- <div> -->
-<!-- <%- paginator({ prev_text: '<' , next_text: '>' }) %> -->
+<!-- <%= paginator({ prev_text: '<' , next_text: '>' }) %> -->
 <!-- </div> -->
