@@ -1,0 +1,20 @@
+<div id="backlinks">
+    <% for ( backlinks in theme.backlinks ) { %>
+        <li class="backlinks-item">
+            <a href="<%- theme.backlinks[backlinks]['url'] %>" target="_blank">
+                <i class="<%- theme.backlinks[backlinks]['icon'] %>"></i></a>
+        </li>
+        <% } %>
+</div>
+
+
+<div id="author-information">
+    <div>
+        <%= theme.footer.since %> - <%= date(Date.now(), "YYYY" ) %>
+                <%= config.title %>
+                    <span id="footer-icon">
+                        <i class="fa fa-mortar-board"></i>
+                    </span>
+                    @<%= config.author %>
+    </div>
+</div>

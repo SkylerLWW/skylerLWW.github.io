@@ -1,32 +1,25 @@
-<!-- 导航栏 -->
+<!-- 菜单栏 -->
+
+<!-- 音乐 -->
+<!-- <div id="music"> -->
+<!--     <audio id="audio" autoplay="autoplay" controls loop="loop" preload="auto" muted="muted"> -->
+<!--         <source src="music/1.mp3" type="audio/mpeg"> -->
+<!--     </audio> -->
+<!--     <button id="playAudio" onclick="playAudio()">Play Audio</button> -->
+<!-- </div> -->
+
 <!-- 搜索栏 -->
-
-<div id="music">
-    <audio id="audio" autoplay="autoplay" controls loop="loop" preload="auto" muted="muted">
-        <source src="music/1.mp3" type="audio/mpeg">
-    </audio>
-    <button id="playAudio" onclick="playAudio()">Play Audio</button>
-</div>
-
 <div id="search">
     <input class="search-input" type="text" placeholder="search">
-    <i class="fa fa-search">Q</i>
+    <i class="fa fa-search"></i>
 </div>
 
+<!-- 导航栏 -->
 <ul id="menu">
-    <!-- 内部链接本页面直接跳转 -->
     <% for ( menu_name in theme.menus ) { %>
         <li class="menu-item">
-            <a href="<%- theme.menus[menu_name]['link'] %>" class="menu-item-link"><%- theme.menus[menu_name]['name'] %></a>
+            <a href="<%- theme.menus[menu_name]['link'] %>" class="menu-item-link"><%- theme.menus[menu_name]['name']
+                    %></a>
         </li>
         <% } %>
-
-
-    <!-- 外部链接打开新的窗口跳转 -->
-    <% for ( link in theme.links ) { %>
-        <li class="menu-item">
-            <a href="<%- theme.links[link] %>" class="menu-item-link" target="_blank"><%- link %></a>
-        </li>
-        <% } %>
-
 </ul>

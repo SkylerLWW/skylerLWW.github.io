@@ -5,22 +5,22 @@
 	border: 0;
 }
 
-html, body, #main {
+body {
 	color: #555;
 	height: 100%;
 }
 
-aside {
+#aside {
 	width: 300px;
 	height: 400px;
 	position: fixed;
 	top: 25%;
 	margin-left: 0;
-	background: rgba(0, 0, 0);
+	background: rgba(192,192,192);
 }
 
-nav {
-    width: 700px;
+#nav {
+    width: 100%;
 	height: 50px;
 	float: right;
 	background: rgba(255, 255, 0, 0.3);
@@ -36,45 +36,45 @@ nav {
 
 
 /* #################### 导航栏 #################### */
-nav #menu {
-    float: right;
+#nav #menu {
+    float: left;
     padding-right: 20px;
 }
-nav ul li {
+#nav ul li {
     float: left;
     padding: 10px;
     list-style: none;
 }
-nav ul li a{
+#nav ul li a{
     color: #555;
     font-size: 12px;
     text-decoration: none;
 }
-nav ul li a:hover {
+#nav ul li a:hover {
     border-bottom: 1px solid;
 }
 
 /* 搜索框 */
-nav input {
+#nav input {
     width: 100px;
     height: 30px;
-    margin: 10px 0px 10px 10px ;
-    font-size: 14px;
-    background: rgba(120, 115, 115, 0.3);
+    margin: 10px 0px 10px 500px ;
+    font-size: 14px
+    background: rgba(255, 255, 0, 0.3);
     text-indent: 20px;
     outline: none;
     color: #87daff;
     position: absolute;
 }
 /* 搜索图标 */
-nav #search i.fa.fa-search {
+#nav #search i.fa.fa-search {
     position: absolute;
     color: #757575;
-    margin: 10px 0px 10px 130px ;
+    margin: 10px 0px 10px 620px ;
     font-size: 20px;
     width: 40px;
     height: 30px;
-    background: rgba(120, 115, 115, 0.3);
+    background: rgba(255, 255, 0, 0.3);
     text-align: center;
     line-height: 2.5;
 }
@@ -291,3 +291,30 @@ nav #search i.fa.fa-search {
 }
 
 /* #################### 主页 #################### */
+
+/* #################### 页尾 #################### */
+
+#footer {
+    font-size: 14px;
+    margin-top: 550px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+#footer #backlinks {
+    display: flex;
+    justify-content: center;
+}
+#footer #backlinks li {
+    padding: 10px;
+    list-style: none;
+    margin: 0 5px;
+}
+#footer #footer-icon {
+    color: #66afef;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px;
+}
+}
+/* #################### 页尾 #################### */

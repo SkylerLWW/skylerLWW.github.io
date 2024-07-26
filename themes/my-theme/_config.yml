@@ -30,6 +30,17 @@ menus:
         name: tags
         link: /tag
 
-links:
-  gitee: https://www.gitee.com/SmartLWW
-  github: https://www.github.com/SkylerLWW
+backlinks:
+  gitee:
+    url: https://www.gitee.com/SmartLWW
+    icon: fa fa-google
+  github:
+    url: https://www.github.com/SkylerLWW
+    icon: fa fa-github
+
+favicon:
+  href: /images/head.png # 网站图标
+  type: image/png
+
+footer:
+  since: 2024

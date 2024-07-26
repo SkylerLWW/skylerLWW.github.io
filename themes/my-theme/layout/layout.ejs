@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title><%- config.title %></title>
+    <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- 引入配置文件 -->
     <%- css('css/main.css') %>
     <%- js('js/JQuery.js') %>
@@ -11,50 +13,25 @@
 </head>
 
 <body>
-    <div id="main">
+
         <!-- 引入侧边栏 -->
-        <aside>
+        <div id="aside">
             <%- include('aside.ejs') %>
-        </aside>
+        </div>
 
-        <!-- 引入导航 -->
-        <nav>
+        <!-- 引入导航栏 -->
+        <div id="nav">
             <%- include('nav.ejs') %>
-        </nav>
-
+        </div>
 
         <!-- 引用index.ejs -->
         <div id="content">
-            <div id="index">
-                <%- body %>
-            </div>
-
-<!--             <div id="categories"> -->
-<!--                 <h3>categories</h3> -->
-<!--                 <ul> -->
-<!--                     <% site.categories.each(category=>{ %> -->
-<!--                         <li> -->
-<!--                             <a href="<%- url_for(category.path) %>"> -->
-<!--                                 <%- category.name %> -->
-<!--                             </a> -->
-<!--                         </li> -->
-<!--                         <% }) %> -->
-<!--                 </ul> -->
-<!--             </div> -->
-
-<!--             <div id="tags"> -->
-<!--                 <h3>tags</h3> -->
-<!--                 <ul> -->
-<!--                     <% site.tags.each(tag=>{ %> -->
-<!--                         <li> -->
-<!--                             <a href="<%- url_for(tag.path) %>"> -->
-<!--                                 <%- tag.name %> -->
-<!--                             </a> -->
-<!--                         </li> -->
-<!--                         <% }) %> -->
-<!--                 </ul> -->
-<!--             </div> -->
+            <%- body %>
         </div>
-    </div>
+
+        <!-- 引入页脚 -->
+        <div id="footer">
+            <%- include('footer.ejs') %>
+        </div>
 </body>
 </html>
