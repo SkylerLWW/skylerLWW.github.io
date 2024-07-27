@@ -5,12 +5,9 @@ abstract: 有密码文章的描述的文字
 password: 123
 message: 请输入密码：123
 tags:
-  - tag1
-  - 标签
+  - test
 categories:
-  - categories1
-  - 分类
-  - 再来
+  - test
 ---
 
 图片显示
@@ -38,7 +35,7 @@ categories:
 
 嵌入网页
 
-<iframe id="child" src='https://www.pixiv.com' width="900px" height="500px"></iframe>
+<iframe id="child" src='https://www.pixiv.net' width="900px" height="500px"></iframe>
 
 width用于设置嵌入网页的宽度，height为高度，单位为像素。
 

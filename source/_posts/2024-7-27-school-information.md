@@ -1,6 +1,7 @@
 ---
 title: school_information
 date: 2024-07-27 10:03:11
+description: 学校信息
 tags:
     - information
 ---
