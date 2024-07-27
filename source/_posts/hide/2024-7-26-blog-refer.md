@@ -1,6 +1,8 @@
 ---
 title: 博客构建参考
 date: 2024-03-01 00:00:00
+password: lww
+message: 请输入密码
 tags:
     - blog
 description: blok构建参考

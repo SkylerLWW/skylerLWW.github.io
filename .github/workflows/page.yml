@@ -1,10 +1,9 @@
 name: hexo page
 
 on:
-  workflow_dispatch:
-#  push:
-#    branches:
-#      - main # default branch
+  push:
+    branches:
+      - main # default branch
 
 jobs:
   build:
