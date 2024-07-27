@@ -10,10 +10,10 @@
     <%- css('images/icon/font/iconfont.css') %>
     <%- js('js/JQuery.js') %>
     <%- js('js/main.js') %>
-
+    <%- js('js/live2d.min.js') %>
 </head>
 
-<body>
+<body onload="InitLive2D()">
     <!-- 回到顶部按钮 -->
     <button id="backTop" onclick="backTop()">Top</button>
     <!-- 引入侧边栏 -->
@@ -35,5 +35,6 @@
     <div id="footer">
         <%- include('footer.ejs') %>
     </div>
+
 </body>
 </html>

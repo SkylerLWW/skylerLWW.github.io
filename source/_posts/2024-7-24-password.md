@@ -35,3 +35,16 @@ categories:
 <% for (var link in site.data.menu) { %>
   <a href="<%= site.data.menu[link] %>"> <%= link %> </a>
 <% } %>
+
+嵌入网页
+
+<iframe id="child" src='https://www.pixiv.com' width="900px" height="500px"></iframe>
+
+width用于设置嵌入网页的宽度，height为高度，单位为像素。
+
+frameborder：用于控制嵌入的网页是否有边框，1为有边框，0为无边框。
+
+scrolling：用于控制嵌入的网页是否有滑动条，1为有，0为无，默认为有。
+
+
+
