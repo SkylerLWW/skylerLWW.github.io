@@ -16,6 +16,9 @@ description: blok构建参考
 
 [颜色RBG](https://www.codeeeee.com/color/picker.html)
 
+[hexo 教程](https://blog.csdn.net/weixin_33693070/article/details/94677672)
+
+
 看板娘教程
 
 [1](https://github.com/summerscar/live2dDemo)
