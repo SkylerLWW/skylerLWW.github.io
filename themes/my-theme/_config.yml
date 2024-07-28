@@ -25,12 +25,12 @@ menus:
         link: /archives
 
 backlinks:
-  gitee:
-    url: https://www.gitee.com/SmartLWW
-    icon: icon-gitee
   github:
     url: https://www.github.com/SkylerLWW
     icon: icon-github1
+  gitee:
+    url: https://www.gitee.com/SmartLWW
+    icon: icon-gitee
   bilibili:
     url: https://space.bilibili.com/403796789
     icon: icon-person
