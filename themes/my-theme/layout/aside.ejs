@@ -1,31 +1,4 @@
-<!-- 分类 -->
-<div id="categories">
-    <h3>categories</h3>
-    <ul>
-        <% site.categories.each(category=>{ %>
-            <li>
-                <a href="<%- url_for(category.path) %>">
-                    <%- category.name %>
-                </a>
-            </li>
-            <% }) %>
-    </ul>
-</div>
-
-<!-- 标签 -->
-<div id="tags">
-    <h3>tags</h3>
-    <ul>
-        <% site.tags.each(tag=>{ %>
-            <li>
-                <a href="<%- url_for(tag.path) %>">
-                    <%- tag.name %>
-                </a>
-            </li>
-            <% }) %>
-    </ul>
-</div>
-
+看板娘
 <!-- 看板娘 -->
 <!-- <div> -->
 <!--     <canvas id="mycanvas" width="300" height="500" style="border:dashed 1px #CCC;"> -->

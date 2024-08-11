@@ -3,16 +3,16 @@
         <li class="backlinks-item">
             <a href="<%- theme.backlinks[backlinks]['url'] %>" target="_blank">
                 <i class="iconfont <%- theme.backlinks[backlinks]['icon'] %>"></i></a>
-        </a>
+            </a>
         </li>
-        <% } %>
+    <% } %>
 </div>
 
 
 <div id="author-information">
     <div>
-        <%= theme.footer.since %> - <%= date(Date.now(), "YYYY" ) %>
-                <%= config.title %>
-                    @<%= config.author %>
+        <%= theme.footer.since %> - <%= date(Date.now(), "YYYY") %>
+        <%= config.title %>
+        @<%= config.author %>
     </div>
 </div>

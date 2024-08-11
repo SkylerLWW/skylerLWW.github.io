@@ -1,106 +1,100 @@
-<!-- 分页 -->
-<!-- 莫名其妙的在最上面 -->
-<!-- <div> -->
-<!-- <%= paginator({ prev_text: '<' , next_text: '>' }) %> -->
-<!-- </div> -->
-
 <div id="home-posts">
 
-<!-- 对文章进行排序，还有分页的显示 -->
-<% let posts=site.posts, current=(page.current - 1) * config.index_generator.per_page; posts.data.sort((a, b)=> {
-    let x = a.pinned ?? 0,
-    y = b.pinned ?? 0;
-    return x === y ? b.date - a.date : y - x;
+    <!-- 对文章进行排序，还有分页的显示 -->
+    <% let posts = site.posts,
+            current = (page.current - 1) * config.index_generator.per_page; posts.data.sort((a, b) => {
+        let x = a.pinned ?? 0,
+                y = b.pinned ?? 0;
+        return x === y ? b.date - a.date : y - x;
     });
     posts = posts.slice(current, config.index_generator.per_page + current);
     %>
-<% posts.forEach((post)=> { %>
-    <div class="post">
-        <a href="<%- url_for(post.path) %>">
-            <h2 class="post-title">
-                <%= post.title %>
-            </h2>
-        </a>
-        <div class="category-and-date">
-            <% if (post.categories.data.length !==0) { %>
-                <!--         第二个拼接的有点问题 -->
-                <span class="category">
+    <% posts.forEach((post)=> { %>
+        <div class="post">
+            <a href="<%- url_for(post.path) %>">
+                <h2 class="post-title">
+                    <%= post.title %>
+                </h2>
+            </a>
+            <div class="category-and-date">
+                <% if (post.categories.data.length !== 0) { %>
+                    <!--         第二个拼接的有点问题 -->
+                    <span class="category">
                     <span class="icon">
                         <!--                 <i class="fa-solid fa-bookmark fa-fw"></i> -->
                     </span>
-                    <% post.categories.forEach(function(category) { %>
-                        <a href="<%- url_for(category.path) %>">
+                        <% post.categories.forEach(function(category) { %>
+                            <a href="<%- url_for(category.path) %>">
                             <%= category.name %>
                         </a>
                         <% }); %>
-                </span>
+                    </span>
                 <% } %>
-                    <span class="date">
+                <span class="date">
                         <span class="icon">
                             <i class="fa-solid fa-calendar fa-fw"></i>
                         </span>
-                        <%- date(post.date, "YYYY/M/D" ) %>
+                        <%- date(post.date, "YYYY/M/D") %>
                     </span>
-        </div>
-        <div class="description">
-            <div class="content" v-pre>
-                <% if (post.description && post.description.trim()) { %>
-                    <%= post.description %>
-                        <% } else { %>
-                            <%= post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
-                                ...
-                                <% } %>
             </div>
-        </div>
-        <div class="post-tags">
-            <% if (post.tags.data.length !==0) { %>
-                <span class="icon">
+            <div class="description">
+                <div class="content" v-pre>
+                    <% if (post.description && post.description.trim()) { %>
+                        <%= post.description %>
+                    <% } else { %>
+                        <%= post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>
+                        ...
+                    <% } %>
+                </div>
+            </div>
+            <div class="post-tags">
+                <% if (post.tags.data.length !== 0) { %>
+                    <span class="icon">
                     <!--                 <i class="fa-solid fa-tags fa-fw"></i> -->
                 </span>
-                <% post.tags.forEach(function(tags) { %>
-                    <a href="<%- url_for(tags.path) %>">
-                        <%= tags.name %>
-                    </a>
+                    <% post.tags.forEach(function(tags) { %>
+                        <a href="<%- url_for(tags.path) %>">
+                            <%= tags.name %>
+                        </a>
                     <% }); %>
-                        <% } %>
+                <% } %>
+            </div>
+            <div>
+                <a href="<%- url_for(post.path) %>" class="go-post">阅读全文</a>
+            </div>
         </div>
-        <div>
-            <a href="<%- url_for(post.path) %>" class="go-post">阅读全文</a>
-        </div>
-    </div>
     <% }); %>
 
-
-<!-- 分页的页码 -->
-<div class="page-current">
+    <!-- 分页的页码 -->
+    <div class="page-current">
         <% if (page.current !== 1) { %>
-        <a class="page-num" href="<%- url_for(page.prev_link) %>">
-            <i class="fa-solid fa-caret-left fa-fw"></i>
-        </a>
-        <a class="page-num" href="<%- config.root %>">1</a>
-        <span class="page-omit">...</span>
+            <a class="page-num" href="<%- url_for(page.prev_link) %>">
+                <i class="fa-solid fa-caret-left fa-fw"></i>
+            </a>
+            <a class="page-num" href="<%- config.root %>">1</a>
+            <span class="page-omit">...</span>
         <% } %>
         <span class="current"><%= page.current %></span>
         <% if (page.current + 1 <= page.total) { %>
-        <a class="page-num" href="<%- url_for("page/" + (page.current + 1)) %>">
-            <%= page.current + 1 %>
-        </a>
+            <a class="page-num" href="<%- url_for("page/" + (page.current + 1)) %>">
+                <%= page.current + 1 %>
+            </a>
         <% } %>
         <% if (page.current + 2 <= page.total) { %>
-        <a class="page-num" href="<%- url_for("page/" + (page.current + 2)) %>">
-            <%= page.current + 2 %>
-        </a>
+            <a class="page-num" href="<%- url_for("page/" + (page.current + 2)) %>">
+                <%= page.current + 2 %>
+            </a>
         <% } %>
         <% if (page.current + 3 <= page.total) { %>
-        <span class="page-omit">...</span>
-        <a class="page-num" href="<%- url_for("page/" + page.total) %>"><%= page.total %></a>
+            <span class="page-omit">...</span>
+            <a class="page-num" href="<%- url_for("page/" + page.total) %>"><%= page.total %></a>
         <% } %>
         <% if (page.current !== page.total) { %>
-        <a class="page-num" href="<%- url_for(page.next_link) %>">
-            <i class="fa-solid fa-caret-right fa-fw"></i>
-        </a>
+            <a class="page-num" href="<%- url_for(page.next_link) %>">
+                <i class="fa-solid fa-caret-right fa-fw"></i>
+            </a>
         <% } %>
-</div>
+    </div>
 </div>
 <!-- 看板娘 -->
 <div>

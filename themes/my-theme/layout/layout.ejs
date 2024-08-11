@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title><%- config.title %></title>
-    <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
+    <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>"/>
     <!-- 引入配置文件 -->
     <%- css('css/main.css') %>
     <%- css('images/icon/font/iconfont.css') %>
@@ -14,27 +14,27 @@
 </head>
 
 <body onload="InitLive2D()">
-    <!-- 回到顶部按钮 -->
-    <button id="backTop" onclick="backTop()">Top</button>
-    <!-- 引入侧边栏 -->
-    <div id="aside">
-        <%- include('aside.ejs') %>
-    </div>
+<!-- 回到顶部按钮 -->
+<button id="backTop" onclick="backTop()">Top</button>
+<!-- 引入侧边栏 -->
+<div id="aside">
+    <%- include('aside.ejs') %>
+</div>
 
-    <!-- 引入导航栏 -->
-    <div id="nav">
-        <%- include('nav.ejs') %>
-    </div>
+<!-- 引入导航栏 -->
+<div id="nav">
+    <%- include('nav.ejs') %>
+</div>
 
-    <!-- 引用index.ejs -->
-    <div id="content">
-        <%- body %>
-    </div>
+<!-- 引用index.ejs -->
+<div id="content">
+    <%- body %>
+</div>
 
-    <!-- 引入页脚 -->
-    <div id="footer">
-        <%- include('footer.ejs') %>
-    </div>
+<!-- 引入页脚 -->
+<div id="footer">
+    <%- include('footer.ejs') %>
+</div>
 
 </body>
 </html>

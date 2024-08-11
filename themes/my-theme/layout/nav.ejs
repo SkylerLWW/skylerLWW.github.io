@@ -2,10 +2,11 @@
     <!-- 导航栏 -->
     <% for ( menu_name in theme.menus ) { %>
         <li class="menu-item">
-            <a href="<%- theme.menus[menu_name]['link'] %>" class="menu-item-link"><%- theme.menus[menu_name]['name']
-                    %></a>
+            <a href="<%- theme.menus[menu_name]['link'] %>" class="menu-item-link"><i
+                        class="iconfont <%- theme.menus[menu_name]['icon'] %>"></i> <%- theme.menus[menu_name]['name']
+                %></a>
         </li>
-        <% } %>
+    <% } %>
 
     <!-- 搜索栏 -->
     <li id="search">

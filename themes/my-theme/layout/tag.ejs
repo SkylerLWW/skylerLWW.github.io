@@ -1,1 +1,15 @@
-<%- partial('index.ejs')  %>
+<!-- 标签 -->
+<div id="tags">
+    <h3>标签</h3>
+    <h3>共计&nbsp;<%= site.tags.length %>&nbsp;个标签</h3>
+    <ul>
+        <% site.tags.each(tag=>{ %>
+            <li>
+                <a href="<%- url_for(tag.path) %>">
+                    <%- tag.name %>
+                </a>
+                [<%= tag.posts.length %>]
+            </li>
+        <% }) %>
+    </ul>
+</div>

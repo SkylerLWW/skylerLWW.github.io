@@ -1,1 +1,15 @@
-<%- partial('index.ejs')  %>
+<!-- 分类 -->
+<div id="categories">
+    <h3>分类</h3>
+    <h3>共计&nbsp;<%= site.categories.length %>&nbsp;个分类</h3>
+    <ul>
+        <% site.categories.each(category=>{ %>
+            <li>
+                <a href="<%- url_for(category.path) %>">
+                    <%- category.name %>
+                </a>
+                [<%= category.posts.length %>]
+            </li>
+            <% }) %>
+    </ul>
+</div>

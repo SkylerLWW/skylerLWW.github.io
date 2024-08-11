@@ -1,7 +1,7 @@
 <!-- 博客详情 -->
 <div>
     <span id="post-author">作者: <%- config.author %></span>
-    <span id="post-date"><%- date(page.date, "YYYY-MM-DD HH:mm:ss" ) %></span>
+    <span id="post-date"><%- date(page.date, "YYYY-MM-DD HH:mm:ss") %></span>
 </div>
 
 <div id="article">
@@ -16,7 +16,7 @@
                     上一篇：<%- page.prev.title %>
                 </a>
             </h5>
-            <% } %>
+        <% } %>
     </div>
 
     <div id="page-next">
@@ -27,6 +27,6 @@
                     下一篇：<%- page.next.title %>
                 </a>
             </h5>
-            <% } %>
+        <% } %>
     </div>
 </div>
