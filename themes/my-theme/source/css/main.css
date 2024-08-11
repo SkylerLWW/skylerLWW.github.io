@@ -1,41 +1,40 @@
 /* #################### start 全局 #################### */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
-    background: rgba(255,255,255)
+    background: rgba(255, 255, 255)
 }
 
 #aside {
-	width: 200px;
-	height: 300px;
-	position: fixed;
-	top: 10%;
-	margin-left: 0;
-	background: rgba(135,206,250);
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    top: 10%;
+    margin-left: 0;
+    background: rgba(135, 206, 250);
 }
 
 #nav {
     width: 100%;
-	height: 50px;
-	float: right;
-	background: rgba(253, 230, 224, 0.3);
+    height: 50px;
+    float: right;
+    background: rgba(253, 230, 224, 0.3);
 }
 
 #content {
-	height: 2000px;
-	padding-top: 100px;
-	padding-left: 300px;
-	background: #f9f7ed;
+    height: 2000px;
+    padding-top: 100px;
+    padding-left: 300px;
+    background: #f9f7ed;
 }
 
 #footer {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 550px;
-    padding-bottom: 20px;
     text-align: center;
     width: 100%;
     background: rgba(234, 234, 239);
@@ -59,6 +58,7 @@ body {
     cursor: pointer;
     opacity: 1;
 }
+
 /* #################### end 全局 #################### */
 
 
@@ -67,16 +67,19 @@ body {
     float: left;
     padding-right: 20px;
 }
+
 #nav ul li {
     float: left;
     padding: 10px;
     list-style: none;
 }
-#nav ul li a{
+
+#nav ul li a {
     color: #555;
     font-size: 12px;
     text-decoration: none;
 }
+
 #nav ul li a:hover {
     border-bottom: 1px solid;
 }
@@ -85,13 +88,14 @@ body {
 #nav #search-input {
     width: 100px;
     height: 30px;
-    font-size: 14px
+    font-size: 14px;
     background: rgba(255, 255, 0, 0.3);
     text-indent: 20px;
     outline: none;
     color: #87daff;
     position: absolute;
 }
+
 /* 搜索图标 */
 #nav #iconfont icon-chazhao {
     position: absolute;
@@ -103,6 +107,7 @@ body {
     text-align: center;
     line-height: 2.5;
 }
+
 /* #################### end 导航栏 #################### */
 
 
@@ -128,6 +133,7 @@ body {
 #article {
     padding: 30px;
 }
+
 #article * {
     margin: 30px 0;
 }
@@ -170,7 +176,7 @@ body {
     border-bottom: 1px solid;
 }
 
-#article h1 a:hover{
+#article h1 a:hover {
     border-bottom: none;
 }
 
@@ -198,53 +204,53 @@ body {
 
 /* 表格处理 */
 #article table {
-  width: 100%;
-  border: 0;
-  margin: 20px 0 50px 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  line-height: 35px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 5px #999;
+    width: 100%;
+    border: 0;
+    margin: 20px 0 50px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #999;
 }
 
 #article table th {
-  background: #73b1e0;
-  font-weight: 800;
-  font-size: 18px;
-  text-align: left;
-  line-height: 35px;
-  color: #FFF;
+    background: #73b1e0;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: left;
+    line-height: 35px;
+    color: #FFF;
 }
 
 #article table tr:nth-child(odd) {
-  background: #F4F4F4;
+    background: #F4F4F4;
 }
 
 #article table tr:hover,
 #article table td:hover {
-  background: #badbf5;
-  color: #FFF;
+    background: #badbf5;
+    color: #FFF;
 }
 
 #article table td, table th {
-  padding: 5px 20px 5px 20px
+    padding: 5px 20px 5px 20px
 }
 
 #article table tr:first-child th:first-child {
-  border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 #article table tr:first-child th:last-child {
-  border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 #article table tr:last-child td:first-child {
-  border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 #article table tr:last-child td:last-child {
-  border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 /* #################### end 文章 #################### */
@@ -255,9 +261,11 @@ body {
     background: #66afef;
     color: #fff;
 }
+
 #home-posts {
     margin: auto;
 }
+
 #home-posts .page-current {
     align-items: center;
     display: flex;
@@ -267,6 +275,7 @@ body {
     text-align: center;
     width: 100%;
 }
+
 #home-posts .page-current .current {
     border-radius: 5px;
     color: #da0a51;
@@ -277,6 +286,7 @@ body {
     padding: 5px;
     width: 35px;
 }
+
 #home-posts .page-current .page-num,
 #home-posts .page-current .page-omit {
     border-radius: 5px;
@@ -287,32 +297,38 @@ body {
     padding: 5px;
     width: 35px;
 }
+
 #home-posts .page-current a {
     color: #999;
 }
+
 #home-posts .post {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
+    position: relative;
 }
+
 #home-posts .post .category-and-date {
     color: #5c6b72;
     margin-top: 15px;
     text-align: center;
     width: 100%;
 }
+
 #home-posts .post .category-and-date .category {
     display: inline-block;
     margin-right: 25px;
 }
-#home-posts .post .category-and-date .category a
-{
+
+#home-posts .post .category-and-date .category a {
     color: #5c6b72;
 }
-#home-posts .post .category-and-date .date
-{
+
+#home-posts .post .category-and-date .date {
     display: inline-block;
 }
+
 #home-posts .post .go-post {
     background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%);
     border: 0;
@@ -323,31 +339,37 @@ body {
     font-size: 14px;
     font-weight: bold;
     padding: 10px 24px;
-    margin: 10px 0px 0px 0px
+    margin: 10px 0px 0px 0px;
     position: absolute;
     right: -5px;
 }
+
 #home-posts .post .post-tags .tag {
     display: inline-block;
     font-weight: bold;
     margin-right: 10px;
 }
+
 #home-posts .post .post-tags a {
     font-size: 14px;
 }
+
 #home-posts .post .post-tags,
 #archives .info,
 .article .info {
     line-height: 1.7;
 }
+
 #home-posts .post-title {
     color: #66afef;
     text-align: center;
 }
+
 #home-posts .post:hover {
     box-shadow: 0 0 5px #d9d9d9;
     transform: translate(-5px, -5px);
 }
+
 #home-posts-wrap {
     box-sizing: border-box;
     background: transparent;
@@ -359,52 +381,43 @@ body {
 
 /* #################### end 主页 #################### */
 
-/* #################### start 页尾 #################### */
-#footer #backlinks {
+/* #################### start 侧边栏 #################### */
+
+#aside #back {
+    color: #00cc66;
+}
+
+#aside #back #backlinks-item {
+    color: #66afef;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+#aside #back #backlinks {
     display: flex;
     justify-content: center;
 }
-#footer #backlinks li {
-    padding: 10px;
+
+#aside #back #backlinks li {
     list-style: none;
+    padding: 10px;
     margin: 0 5px;
 }
-#footer #footer-icon {
-    color: #66afef;
-    display: inline-block;
-    font-size: 18px;
-    margin: 0 10px;
-}
-}
-/* #################### end 页尾 #################### */
 
-/* #################### start 侧边栏 #################### */
-#aside #categories,
-#aside #tags{
-    border-style:solid;
-	border-width:1px;
-	border-color: #e06c75;
-	text-align: center;
-	margin: 20px 0px 20px 10px;
-}
-#aside #categories h3,
-#aside #tags h3{
-    color: #e06c75;
-}
-
-#aside #categories ul,
-#aside #tags ul{
-    margin-left: 20px;
-    list-style: none;
-}
-
-#aside #categories ul li,
-#aside #tags ul li{
-    border: 1px solid gray
-}
-#aside #categories ul li a,
-#aside #tags ul li a{
-    color:rgba(83, 139, 205 )
+#aside #back #backlinks li a {
+    text-decoration: none;
 }
 
 /* #################### end 侧边栏 #################### */
+
+/* #################### start 页尾 #################### */
+
+#footer #author-information {
+    color: #66afef;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 10px;
+}
+
+/* #################### end 页尾 #################### */
