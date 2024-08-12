@@ -1,5 +1,7 @@
 <div id="home-posts">
-
+    <div id="blog-title">
+        blog
+    </div>
     <!-- 对文章进行排序，还有分页的显示 -->
     <% let posts = site.posts,
             current = (page.current - 1) * config.index_generator.per_page; posts.data.sort((a, b) => {

@@ -11,10 +11,10 @@ body {
 
 #aside {
     width: 200px;
+    margin: 50px 0 60px 0;
+    padding: 30px 0 30px 0;
     height: auto;
     position: fixed;
-    top: 10%;
-    margin-left: 0;
     background: rgba(135, 206, 250);
 }
 
@@ -26,7 +26,7 @@ body {
 
 #content {
     height: auto;
-    padding: 100px 0 0 100px;
+    padding: 50px 100px 50px 100px;
     margin: 0 0 0 200px;
     background: #f9f7ed;
 }
@@ -256,9 +256,11 @@ body {
 
 
 /* #################### start 主页 #################### */
-#home-posts .page-current .page-num:hover {
-    background: #66afef;
-    color: #fff;
+#blog-title{
+text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 50px;
+    color: #0C9A9A;
 }
 
 #home-posts {
@@ -273,6 +275,11 @@ body {
     margin-top: 50px;
     text-align: center;
     width: 100%;
+}
+
+#home-posts .page-current .page-num:hover {
+    background: #66afef;
+    color: #fff;
 }
 
 #home-posts .page-current .current {
@@ -383,11 +390,14 @@ body {
 /* #################### start 侧边栏 #################### */
 
 #aside #back {
-    color: #00cc66;
+    margin: 20px 0 20px 0;
+    color: red;
+    background-color: #00cc66;
+    border: 3px solid #3e4d7c;
+    border-radius: 10px; /* 设置所有四个角的圆角半径 */
 }
 
 #aside #back #backlinks-item {
-    color: #66afef;
     display: inline-block;
     font-size: 20px;
     margin: 10px 10px;
@@ -406,6 +416,18 @@ body {
 
 #aside #back #backlinks li a {
     text-decoration: none;
+}
+
+#aside #friend {
+    margin: 20px 0 20px 0;
+    color: red;
+    background-color: #00cc66;
+    border: 3px solid #3e4d7c;
+    border-radius: 10px; /* 设置所有四个角的圆角半径 */
+}
+
+#live2D {
+    margin: 20px 0 20px 0;
 }
 
 /* #################### end 侧边栏 #################### */
