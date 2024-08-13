@@ -95,18 +95,6 @@ body {
     position: absolute;
 }
 
-/* 搜索图标 */
-#nav #iconfont icon-chazhao {
-    position: absolute;
-    color: #757575;
-    font-size: 20px;
-    width: 40px;
-    height: 30px;
-    background: rgba(255, 255, 0, 0.3);
-    text-align: center;
-    line-height: 2.5;
-}
-
 /* #################### end 导航栏 #################### */
 
 
@@ -256,8 +244,8 @@ body {
 
 
 /* #################### start 主页 #################### */
-#blog-title{
-text-align: center;
+#blog-title {
+    text-align: center;
     margin: 0 0 50px 0;
     font-size: 50px;
     color: #0C9A9A;
@@ -392,8 +380,8 @@ text-align: center;
 #aside #back {
     margin: 20px 0 20px 0;
     color: red;
-    background-color: #00cc66;
-    border: 3px solid #3e4d7c;
+    background-color: #8eeabf;
+    border: 0;
     border-radius: 10px; /* 设置所有四个角的圆角半径 */
 }
 
@@ -421,8 +409,8 @@ text-align: center;
 #aside #friend {
     margin: 20px 0 20px 0;
     color: red;
-    background-color: #00cc66;
-    border: 3px solid #3e4d7c;
+    background-color: #8eeabf;
+    border: 0;
     border-radius: 10px; /* 设置所有四个角的圆角半径 */
 }
 
