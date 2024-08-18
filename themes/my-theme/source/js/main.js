@@ -1,15 +1,17 @@
-function stopAudio() {
-    document.getElementById('audio').pause();
-    document.getElementById('audio').currentTime = 0; // 将播放位置重置到开头
-    document.getElementById('stop-music').style.display = 'none';
-    document.getElementById('start-music').style.display = 'block';
-}
+function controlAudio() {
+    const audioElement = document.getElementById('audio');
+    const is_pause = audioElement.paused;//true为暂停，false为播放
+    const button = document.getElementById('control_audio');
 
-function playAudio() {
-    document.getElementById("audio").play();
-    document.getElementById("audio").muted = false;
-    document.getElementById('stop-music').style.display = 'block';
-    document.getElementById('start-music').style.display = 'none';
+    if (is_pause) {
+        audioElement.play();
+        audioElement.muted = false;
+        button.innerHTML = '<i class="iconfont icon-zantingyinle"></i>';
+    } else {
+        audioElement.pause();
+        audioElement.currentTime = 0; // 将播放位置重置到开头
+        button.innerHTML = '<i class="iconfont icon-music"></i>';
+    }
 }
 
 function backTop() {

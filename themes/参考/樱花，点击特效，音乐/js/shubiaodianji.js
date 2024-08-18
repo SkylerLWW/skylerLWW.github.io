@@ -20,15 +20,15 @@ function clickEffect() {
         updateSize();
         window.addEventListener('resize', updateSize, false);
         loop();
-        window.addEventListener("mousedown", function(e) {
+        window.addEventListener("mousedown", function (e) {
             pushBalls(randBetween(10, 20), e.clientX, e.clientY);
             document.body.classList.add("is-pressed");
-            longPress = setTimeout(function() {
+            longPress = setTimeout(function () {
                 document.body.classList.add("is-longpress");
                 longPressed = true;
             }, 500);
         }, false);
-        window.addEventListener("mouseup", function(e) {
+        window.addEventListener("mouseup", function (e) {
             clearInterval(longPress);
             if (longPressed == true) {
                 document.body.classList.remove("is-longpress");
@@ -37,7 +37,7 @@ function clickEffect() {
             }
             document.body.classList.remove("is-pressed");
         }, false);
-        window.addEventListener("mousemove", function(e) {
+        window.addEventListener("mousemove", function (e) {
             let x = e.clientX;
             let y = e.clientY;
             pointer.style.top = y + "px";
@@ -65,6 +65,7 @@ function clickEffect() {
             y: height / 2
         };
     }
+
     class Ball {
         constructor(x = origin.x, y = origin.y) {
             this.x = x;
@@ -80,6 +81,7 @@ function clickEffect() {
             this.r = randBetween(8, 12) + 3 * Math.random();
             this.color = colours[Math.floor(Math.random() * colours.length)];
         }
+
         update() {
             this.x += this.vx - normal.x;
             this.y += this.vy - normal.y;
@@ -131,5 +133,6 @@ function clickEffect() {
         }
     }
 }
+
 clickEffect();//调用
 

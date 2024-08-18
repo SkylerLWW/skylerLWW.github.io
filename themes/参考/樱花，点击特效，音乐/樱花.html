@@ -1,53 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>樱花飘落</title>
-  <style>
-    body {
-      background-color: #f0f0f0;
-      overflow: hidden;
-    }
+<meta charset="UTF-8">
+<title>Sakura Animation</title>
+<style>
+  .sakura {
+    position: absolute;
+    top: -10%;
+    font-size: 2em;
+    color: #ff69b4;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
 
-    .sakura {
-      position: absolute;
-      top: -10px;
-      z-index: 1;
-      pointer-events: none;
-      animation: fall linear infinite;
+  @keyframes fall {
+    0% {
+      transform: translateY(-10%);
+      opacity: 1;
     }
-
-    @keyframes fall {
-      0% {
-        transform: translateY(-10%);
-      }
-      100% {
-        transform: translateY(110vh);
-      }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <script>
-    function createSakura() {
-      const sakura = document.createElement('div');
-      sakura.className = 'sakura';
 
-      const left = Math.random() * window.innerWidth;
-      const animationDuration = Math.random() * 6 + 3;
+<script>
+  function createSakura() {
+    const sakura = document.createElement('div');
+    sakura.className = 'sakura';
 
-      sakura.style.left = `${left}px`;
-      sakura.style.animationDuration = `${animationDuration}s`;
+    // 限制左右生成距离在页面宽度的20%到80%之间
+    const minLeft = window.innerWidth * 0.01;
+    const maxLeft = window.innerWidth * 0.95;
+    const left = Math.random() * (maxLeft - minLeft) + minLeft;
+    const animationDuration = Math.random() * 6 + 3;
 
-      sakura.innerHTML = '&#x1F338;';
+    sakura.style.left = `${left}px`;
+    sakura.style.animationDuration = `${animationDuration}s`;
 
-      document.body.appendChild(sakura);
+    sakura.innerHTML = '&#x1F338;';
 
-      sakura.addEventListener('animationend', () => {
-        sakura.parentNode.removeChild(sakura);
-      });
-    }
+    document.body.appendChild(sakura);
 
-    setInterval(createSakura, 500);
-  </script>
+    sakura.addEventListener('animationend', () => {
+      sakura.parentNode.removeChild(sakura);
+    });
+  }
+
+  setInterval(createSakura, 500);
+</script>
+
 </body>
 </html>
