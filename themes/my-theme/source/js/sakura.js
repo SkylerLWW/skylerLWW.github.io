@@ -130,9 +130,9 @@ function startSakura() {
 }
 
 window.onresize = function () {
-    var canvasSnow = document.getElementById('canvas_snow');
+    // var canvasSnow = document.getElementById('canvas_snow');
 }
 img.onload = function () {
-    startSakura();
+    // startSakura();
 }
 
