@@ -5,17 +5,21 @@ description: 学校信息
 tags:
     - information
 ---
-学校官网
+[学校官网](https://www.fjtcm.edu.cn/)：https://www.fjtcm.edu.cn/
 
-[学校官网](https://www.fjtcm.edu.cn/)
+---
 
 宿舍科上班时间
 
 ![宿舍科上班时间](宿舍科上班时间.png)
 
-学校校历（暂时缺失）
+---
+
+学校校历
 
 ![2024-2025校历](2024-2025校历.png)
+
+---
 
 宿舍楼QQ号
 
