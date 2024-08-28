@@ -2,7 +2,8 @@
 title: 明日方舟
 description: 明日方舟攻略
 date: 2024-08-01 00:00:00
-categories: 游戏
+categories: 
+  - 游戏
 ---
 相关链接
 

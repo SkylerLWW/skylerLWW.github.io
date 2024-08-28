@@ -2,8 +2,8 @@
 title: 学校信息
 date: 2024-07-27 10:03:11
 description: 学校信息
-tags:
-    - information
+categories: 
+  - 信息
 ---
 [学校官网](https://www.fjtcm.edu.cn/)：https://www.fjtcm.edu.cn/
 
